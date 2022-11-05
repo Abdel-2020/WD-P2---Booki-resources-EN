@@ -5,7 +5,7 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
-- Desktop: 1440px
+- Desktop: 992px
 
 ## Colors
 
@@ -27,14 +27,7 @@ The designs were created to the following widths:
 
 ## Functional Specifications
 
-● Users will be able to search for accommodation in the town of their
-choosing. The search field is an input field, so users will need to be
-able to edit this. This field should be part of a form so that it can be
-validated by W3C. The search part does not need to be functional
-All maps for accommodation and activities should be entirely
-clickable (and not just the title). For the time being the links are
-empty. You can use a “href=”#”” attribute to simulate the presence of
-a link
+- Users will be able to search for accommodation in the town of their choosing. The search field is an input field, so users will need to be able to edit this. This field should be part of a form so that it can be validated by W3C. The search part does not need to be functional. All maps for accommodation and activities should be entirely clickable (and not just the title). For the time being the links are empty. You can use a “href=”#”” attribute to simulate the presence of a link.
 
 
 - The filters should change appearance during mouseover. Up to us to decide. 
@@ -51,7 +44,7 @@ a link
 
 - 992px for computer screens
 - 768px for tablets
-- 768 for mobile phones
+- <768 for mobile phones
 
 ### Mobile first?
 
