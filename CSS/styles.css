@@ -1,6 +1,141 @@
 /** Import fonts **/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+
+
+/** Colors **/
+:root{
+--blue :#0065FC;
+--ligther-blue: #DEEBFF;
+--Gray: #F2F2F2;
+}
+
+/** Reset Styling **/
+
+*{
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    overflow: 0;
+}
+
+/** Styling **/
 
 body{
-    font-family: 'Raleway', sans-serif;
+   padding: 30px;
+}
+
+
+/** Navigation **/
+
+#site-logo{
+    position: relative;
+    right: 20px;
+    height: 45px;
+    width: auto;
+}
+
+#site-nav{
+    position: absolute;
+    top:0px;
+    right: 0vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    font-weight: 500;
+
+}
+
+.nav-text{
+    border-top: white 3px solid;
+    padding-top: 45px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.nav-text:hover{
+    color:var(--blue);
+    border-top: var(--blue) 3px solid;
+}
+ 
+
+h1{
+    font-size: 20px;
+}
+
+/** Seacrh Form **/
+.site-search-form{
+}
+
+.form-icon-background{
+    height:45px;
+    width:40px;
+    display: inline-block;
+    background-color: var(--Gray);
+    border-radius: 15px 0 0 15px;
+    margin-right: -4px;
+    
+}
+
+.form-icon{
+    padding: 14px 16px;
+}
+
+.form-text-field{
+    border: var(--Gray) 1px solid;
+    margin:0;
+    height: 45px;
+    font-weight: 700;
+    padding-left: 20px;
+    color: black;
+    
+}
+
+.form-button{
+    border-radius: 0 15px 15px 0;
+    padding:13px 15px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 500;
+    margin-left:-5px;
+   cursor: pointer;
+}
+
+
+/**Filters Section**/
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    height:45px;
+}
+
+.filter-item{
+    width: 170px;
+    border:var(--Gray) 3px solid;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.item-icon{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 20px;
+    padding:10px;
+}
+
+.item-text{
+    text-align: right;
+    font-weight: 700;
+
 }

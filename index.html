@@ -25,27 +25,31 @@
     <header>
         <img src="/images/logo/Booki-Desktop.png" alt="Booki Logo" id="site-logo">
     </header>
-    <nav>
+    <nav id="site-nav">
         <p class="nav-text">Accomodations</p>
         <p class="nav-text">Activities</p>
     </nav>
 
+    <!--Search Box-->
     <section>
         <h1 class="site-heading">Find a place for your dream vacation</h1>
         <p class="heading-punchline">Downtown or in nature</p>
 
         <form class="site-search-form">
+            <div class="form-icon-background">
             <i class="form-icon fa-solid fa-location-dot"></i>
+        </div>
             <input type="text" id="form-text-field" class="form-text-field" name="location"
                 placeholder="Enter a location">
             <input type="submit" class="form-button" value="Search">
         </form>
 
+<!--Filters Section-->
         <h2>Filters</h2>
         <ul class="filters">
             <li class="filter-item">
-                <i class="fa-solid fa-money-bill-wave"></i>
-                <p>Low cost</p>
+                <i class="item-icon  fa-solid fa-money-bill-wave"></i>
+                <p class="item-text">Low cost</p>
             </li>
             <li class="filter-item">
                 <i class="item-icon fa-solid fa-child-reaching"></i>
@@ -67,6 +71,7 @@
         </div>
     </section>
 
+<!--Accommodations in Marseille-->
     <main id="main-content">
         <h1 class="main-content-heading">Accomodations in Marseille</h1>
         <div class="main-content-card">
@@ -106,9 +111,10 @@
         </div>
 
         <p><a href="#">Show more</a></p>
-
     </main>
+<!--End of Accommodations in Marseille-->
 
+<!--Most Popular-->
     <aside id="side-content">
         <h1 class="side-content-title">Most Popular</h1>
         <i class="fa-solid fa-star"></i>
@@ -129,42 +135,44 @@
             <h2 class="card-title">Hôtel chez Amina</h2>
             <p class="card-text">Night starting at <strong>96€‎</strong></p>
         </div>
-
     </aside>
+<!--End of Most Popular-->
 
+<!--Activity Section-->
     <section id="activities-section">
-        <h1 class="section-title">Activites in Marseille</h1>
-        <div class="section-card">
+        <h1 class="activities-section-title">Activites in Marseille</h1>
+        <div class="activities-section-card">
             <img src="/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="section-image">
             <p class="section-text">Old Port</p>
         </div>
 
-        <div class="section-card">
+        <div class="activities-section-card">
             <img src="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="section-image">
-            <p class="section-text">Pomègues Fort</p>
+            <p class="activities-section-text">Pomègues Fort</p>
         </div>
 
-        <div class="section-card">
+        <div class="activities-section-card">
             <img src="/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="section-image">
-            <p class="section-text">Pomègues Fort</p>
+            <p class="activities-section-text">Pomègues Fort</p>
         </div>
 
-        <div class="section-card">
+        <div class="activities-section-card">
             <img src="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="section-image">
-            <p class="section-text"> Calanques national park</p>
+            <p class="activities-section-text"> Calanques national park</p>
         </div>
 
-        <div class="section-card">
-            <img src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="section-image">
-            <p class="section-text">Notre-Dame-de-la-Garde</p>
+        <div class="activities-section-card">
+            <img src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="activities-section-image">
+            <p class="activities-section-text">Notre-Dame-de-la-Garde</p>
         </div>
 
-        <div class="section-card">
-            <img src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="section-image">
-            <p class="section-text">Longchamp Park</p>
+        <div class="activities-section-card">
+            <img src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="activities-section-image">
+            <p class="activities-section-text">Longchamp Park</p>
         </div>
     </section>
-
+<!--End of Activity Section-->
+<!--Footer-->
     <footer>
         <div>
             <h1>About</h1>
@@ -186,7 +194,7 @@
         </div>
 
     </footer>
-
+<!--End of Footer-->
     <script src="" async defer></script>
 </body>
 
