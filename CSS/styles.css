@@ -94,6 +94,7 @@ h1{
     border: var(--Gray) 1px solid;
     margin:0;
     height: 45px;
+    width:200px;
     font-weight: 700;
     padding-left: 20px;
     color: black;
@@ -129,25 +130,33 @@ h1{
 }
 
 .filter-item{
-    padding-right: 10px;
-    border:var(--Gray) 3px solid;
-    border-radius: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
+    width:auto;
+    border-radius: 50px;
+    padding-right: 5px;
+    border:var(--Gray) 3px solid;
+    border-left: none;
 
+}
+
+.filter-icon-background{
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 16px;
+    text-align: center;
 }
 
 .item-icon{
-    position:relative;
-    left: -2px;
-    background-color: #DEEBFF;
     color: #0065FC;
-    border-radius: 35px;
-    padding:15px;
 }
 
 .item-text{
+    padding: 5px;
     font-weight: 700;
 }
 
@@ -156,12 +165,40 @@ h1{
 .tooltip{
     display: flex;
     justify-content: space-between;
-    width: 420px;
+    width: 450px;
 }
 
 .tooltip-icon{
     color: var(--blue);
-    border: var(--Gray) 1px solid;
+    border: var(--Gray) 2px solid;
     border-radius: 20px;
     padding: 9px 14px;
+    margin-right: 10px;
+}
+
+.tooltip-text{
+padding-right: 30px;
+}
+
+
+/** Main - Content**/
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    height:600px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--Gray);
+}
+
+.main-content-card{
+    height: 200px;
+    width: 180px;
+}
+
+.card-image{
+    width: 180px;
+    height: auto;
 }
