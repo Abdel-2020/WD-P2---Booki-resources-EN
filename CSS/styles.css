@@ -144,7 +144,7 @@ h1{
 
 .filter-icon-background{
     background-color: #DEEBFF;
-    border-radius: 50%;
+    border-radius: 50px;
     height: 50px;
     width: 50px;
     padding: 16px;
@@ -183,7 +183,8 @@ padding-right: 30px;
 
 /** Main - Content**/
 
-main{
+.main-content{
+    margin-top: 20px;
     height:50vh;
     width: 40vw;
     background-color: var(--Gray);
@@ -191,17 +192,19 @@ main{
     padding: 20px;
 }
 
-.main-content{
+.main-content-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+
 }
 
 .main-content-card{
     width: 200px;
     height: 180px;
     margin: 17px;
+    border-radius: 20px;
+    border: white 6px solid;
 }
 
 .card-title{
@@ -209,6 +212,7 @@ main{
 }
 
 .card-image{
-    width: 180px;
-    height: auto;
+
+    width: 200px;
+    height: 120px;
 }
