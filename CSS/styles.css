@@ -23,6 +23,10 @@
     color: black;
 }
 
+p, i{
+    font-size: 14px;
+}
+
 
 /** Styling **/
 
@@ -46,7 +50,7 @@
 @media only screen and (min-width: 992px) {
 
     body {
-        padding: 20px;
+      
         width: 992px;
         margin: 0 auto;
     }
@@ -86,16 +90,20 @@
         border-top: var(--blue) 3px solid;
     }
 
-
     .site-heading {
         font-size: 18px;
+    }
+
+    .site-subheading {
+        padding: 5px 0;
+        font-size: 14px;
     }
 
 
 
     /** Seacrh Form **/
     .site-search-form {
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 10px;
     }
 
@@ -161,7 +169,6 @@
         border: var(--Gray) 3px solid;
         border-left: none;
         font-weight: 700;
-        font-size: 12px;
 
     }
 
@@ -207,10 +214,10 @@
 
     .main-content {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+        margin-bottom: 30px;
     }
 
     .main-content-header {
@@ -218,8 +225,10 @@
     }
 
     .main-content-title,
-    .side-content-title {
+    .side-panel-title,
+    .section-title {
         font-size: 16px;
+        margin-bottom: 10px;
     }
 
     .main-content>section {
@@ -243,11 +252,12 @@
 
     .product-card {
         width: 180px;
-        height: 160px;
+        height: 150px;
         border-radius: 20px;
         border: white 4px solid;
         background-color: white;
-     
+        margin: 5px;
+        filter: drop-shadow(0px 3px 4px #BBB);
     }
 
     .card-image {
@@ -255,42 +265,55 @@
         width: 172px;
         height: 80px;
         object-fit: cover;
-       
+
+
     }
 
     .card-title {
-        font-size: 14px;
-        padding: 2px;
-    }
-
-    .card-pricing, .product-card-rating{
         font-size: 12px;
-    
     }
 
-    .product-card > figcaption {
-        display:flex;
+    .card-pricing,
+    .product-card-rating {
+        padding: 2px 0;
+
+    }
+
+    .product-card>figcaption,
+    .side-panel-card>figcaption {
+        display: flex;
         flex-direction: column;
         font-size: 14px;
+        width: 150px;
         padding: 5px;
-    } 
+    }
 
 
     .results-link {
         position: relative;
+        top: 10px;
         right: 240px;
         padding: 15px 10px 25px 10px;
         font-weight: 700;
     }
 
-    /*Side content*/
+    .star-toggled-on {
+        color: var(--blue);
+    }
 
-    .side-content {
-        width: 33%;
+    .star-toggled-off {
+        color: var(--Gray);
     }
 
 
-    .side-content-header {
+
+
+
+    /*Side content*/
+
+
+
+    .side-panel-header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -299,25 +322,98 @@
 
 
 
-    .side-content-card {
+    .side-panel-card {
         width: 260px;
-        height: 110px;
+        margin: 12px 10px;
         border: white 4px solid;
         background-color: white;
         display: flex;
-        margin: 27px auto;
         border-radius: 15px;
-
-
+        filter: drop-shadow(0px 3px 4px #BBB);
     }
 
-    .side-content-card-image {
+  
+    .side-panel-card-image {
         border-radius: 15px 0 0 15px;
         height: 102px;
         width: 100px;
         object-fit: cover;
 
     }
+
+    .side-panel-card>figcaption {
+        justify-content: space-evenly;
+        padding: 0 10px;
+    }
+
+    .side-panel-star {
+        position: relative;
+
+    }
+
+
+    /*Activity Section*/
+    .activities-section-container{
+        display:flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 30                                                                                                                                                                                                                                                                                                                                                                                                                           px;
+    }
+
+    .activities-section-container > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+   
+    }
+
+
+    .activities-section-card{
+        width:200px;
+        border-radius: 15px 15px 15px 15px;
+        background-color: white;
+        filter: drop-shadow(0px 3px 4px #BBB);
+    }
+
+    .activities-section-card > figcaption > .card-title{
+        padding: 10px;
+    }
+
+    .big{
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0  0;
+    }
+
+    .small{
+        height:100px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0  0;
+    }
+
+
+
+    /*footer section*/
+    footer{
+        background-color: var(--Gray);
+    }
+    .footer-container{
+        margin-top: 30px;
+       width: 80%;;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .footer-text{
+        padding: 5px 0;
+        font-weight: 500px;
+    }
+
+    
 
 
 }
