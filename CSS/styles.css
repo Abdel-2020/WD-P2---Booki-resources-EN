@@ -18,13 +18,12 @@
     margin: 0;
     list-style: none;
     font-family: 'Raleway', sans-serif;
-    overflow: 0;
     text-decoration: none;
     color: black;
 }
 
 body {
-    
+
     margin: 0 auto;
 }
 
@@ -50,7 +49,7 @@ i {
     display: block;
     height: 50px;
     width:auto;
-    margin: 0 auto;
+    margin: 0 auto 80px;
 }
 
 
@@ -59,22 +58,154 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 300px;
+    width: 370px;
     font-weight: 500;
+    position:relative;
+    top: 110px;
 }
 
 
 .nav-text {
-    border-top: white 3px solid;
-    padding-top: 45px;
-    width: 200px;
+    border-bottom: var(--Gray) 3px solid;
+    padding: 15px 0;
+    width: 100%;
     text-align: center;
 }
 
 .nav-text:hover {
     color: var(--blue);
-    border-top: var(--blue) 3px solid;
+    border-bottom: var(--blue) 3px solid;
 }
+
+
+  /*header*/
+
+
+  .site-header {
+    width: 350px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.site-heading {
+    font-size: 20px;
+  
+}
+
+.site-subheading {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+
+  /** Seacrh Form **/
+  .site-search-form {
+    margin: 20px;
+}
+
+.form-icon-background {
+    height: 45px;
+    width: 40px;
+    display: inline-block;
+    background-color: var(--Gray);
+    border-radius: 15px 0 0 15px;
+    margin-right: -4px;
+
+}
+
+.form-icon {
+    padding: 14px 16px;
+}
+
+.form-text-field {
+    border: var(--Gray) 1px solid;
+    margin: 0;
+    height: 45px;
+    width: 200px;
+    font-weight: 700;
+    padding-left: 20px;
+    color: black;
+
+}
+
+.form-button {
+    border-radius: 0 15px 15px 0;
+    padding: 13px 15px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 500;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+
+/**Filters Section**/
+
+.filters {
+    margin: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width:300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filters>h2 {
+    font-size: 18px;
+}
+
+.filter-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    border-radius: 50px;
+    padding-right: 5px;
+    border: var(--Gray) 3px solid;
+    border-left: none;
+    font-weight: 700;
+
+}
+
+.filter-icon-background {
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.item-icon {
+    color: #0065FC;
+}
+
+.item-text {
+    padding: 5px;
+}
+
+/** Tool Tip**/
+
+.tooltip {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 370px;
+}
+
+.tooltip-icon {
+    color: var(--blue);
+    border: var(--Gray) 2px solid;
+    border-radius: 20px;
+    padding: 4px 8px;
+    margin: 0 10px;
+
+}
+
+.tooltip-text {
+    padding-right: 30px;
+}
+
 
 
     
@@ -97,7 +228,7 @@ i {
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
-        padding: 10px 25px;
+        padding: 5px;
         margin-bottom: 30px;
     }
 
@@ -155,6 +286,7 @@ i {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+
 
     }
 
@@ -244,9 +376,13 @@ i {
 
     }
 
+    .activities-section-container > div{
+        width: 100%;
+    }
+
 
     .activities-section-card {
-        width: 370px;
+        width: 90%;
         border-radius: 15px 15px 15px 15px;
         background-color: white;
         filter: drop-shadow(0px 3px 4px #BBB);
@@ -260,7 +396,7 @@ i {
 
     .small-mobile {
         height: 100px;
-        width: 370px;
+        width: 100%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
