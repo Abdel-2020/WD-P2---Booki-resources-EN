@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Stylesheets-->
-    <!--link rel="stylesheet" href="/CSS/normalize.css">-->
+    <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
 
     <!--Font Awesome Icons-->
@@ -28,26 +28,24 @@
 
 <body>
 
-    <img src="images/logo/Booki-Desktop.png" alt="Booki Logo" class="site-logo">
-    <img src="images/logo/Booki-Mobile.png" alt="Booki Logo" class="site-logo-mobile">
 
 
     <!--Nav-->
     <nav class="site-nav">
-        <p class="nav-text">Accomodations</p>
-        <p class="nav-text">Activities</p>
+        <h3 class="nav-text">Accomodations</h3>
+        <h3 class="nav-text">Activities</h3>
     </nav>
 
     <!--Header-->
     <header class="site-header">
-
+        <img src="images/logo/Booki-Desktop.png" alt="Booki Logo" class="site-logo">
+        <img src="images/logo/Booki-Mobile.png" alt="Booki Logo" class="site-logo-mobile">
         <h1 class="site-heading">Find a place for your dream vacation</h1>
-        <p class="site-subheading">Downtown or in nature</p>
-
+        <h3 class="site-subheading">Downtown or in nature</h3>
     </header>
 
     <!--Search Box-->
-    <section>
+    <section class="site-search-form-section">
         <form class="site-search-form">
             <div class="form-icon-background">
                 <i class="form-icon fa-solid fa-location-dot"></i>
@@ -55,13 +53,17 @@
             <input type="text" id="form-text-field" class="form-text-field" name="location"
                 placeholder="Enter a location">
             <button type="submit" class="form-button">Search</button>
-            <button type="submit" class="form-button-mobile" ><i class="fa-solid fa-magnifying-glass form-button-icon"></i> </button>
+            <button type="submit" class="form-button-mobile"><i
+                    class="fa-solid fa-magnifying-glass form-button-icon"></i> </button>
         </form>
+    </section>
+    <!--Filters Section-->
+    <section class="filter-section">
 
-        <!--Filters Section-->
-        <section class="filter-section">
-        <h1 class="filter-title">Filters</h1>
         <ul class="filters">
+            <li>
+                <h2 class="filter-title">Filters</h2>
+            </li>
             <li class="filter-item order-first-place">
                 <div class="filter-icon-background ">
                     <i class="item-icon  fa-solid fa-money-bill-wave"></i>
@@ -100,9 +102,12 @@
 
 
     <main class="main-content">
+
+
+
         <section class="results-section">
-            <header class="main-content-header">
-                <h1 class="main-content-title">Accomodations in Marseille</h1>
+            <header class="results-section-header">
+                <h2 class="results-section-title">Accomodations in Marseille</h2>
             </header>
 
             <div class="results-grid">
@@ -110,7 +115,7 @@
                 <figure class="product-card">
                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="card-image">
                     <figcaption class="product-card-text">
-                        <h2 class="card-title">Auberge La Cannebiére</h2>
+                        <h4 class="card-title">Auberge La Cannebiére</h4>
                         <p class="card-pricing">Night starting at <strong>25€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on"></i>
@@ -125,7 +130,7 @@
                 <figure class="product-card">
                     <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="card-image">
                     <figcaption class="product-card-text">
-                        <h2 class="card-title">Hótel du port</h2>
+                        <h4 class="card-title">Hótel du port</h4>
                         <p class="card-pricing">Night starting at <strong>52€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on"></i>
@@ -140,7 +145,7 @@
                 <figure class="product-card">
                     <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="card-image">
                     <figcaption class="product-card-text">
-                        <h2 class="card-title">Les mouettes Hotel</h2>
+                        <h4 class="card-title">Les mouettes Hotel</h4>
                         <p class="card-pricing">Night starting at <strong>76€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on"></i>
@@ -155,7 +160,7 @@
                 <figure class="product-card">
                     <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="card-image">
                     <figcaption class="product-card-text">
-                        <h2 class="card-title">Hótel de la mer</h2>
+                        <h4 class="card-title">Hótel de la mer</h4>
                         <p class="card-pricing">Night starting at <strong>45€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on"></i>
@@ -170,7 +175,7 @@
                 <figure class="product-card">
                     <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="card-image">
                     <figcaption class="product-card-text">
-                        <h2 class="card-title">Auberge La Panier</h2>
+                        <h4 class="card-title">Auberge La Panier</h4>
                         <p class="card-pricing">Night starting at <strong>23€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on"></i>
@@ -185,7 +190,7 @@
                 <figure class="product-card">
                     <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="card-image">
                     <figcaption class="product-card-text">
-                        <h2 class="card-title">Hótel chez Amina</h2>
+                        <h4 class="card-title">Hótel chez Amina</h4>
                         <p class="card-pricing">Night starting at <strong>96€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on"></i>
@@ -201,9 +206,9 @@
             <a href="#" class="results-link">Show more</a>
         </section>
 
-        <section class="side-panel">
+        <section class="side-panel-section">
             <header class="side-panel-header">
-                <h1 class="side-panel-title">Most Popular</h1>
+                <h2 class="side-panel-title">Most Popular</h2>
                 <i class="fa-solid fa-star"></i>
             </header>
             <div>
@@ -211,7 +216,7 @@
                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         class="side-panel-card-image">
                     <figcaption>
-                        <h2 class="card-title">Morning Sun Hotel</h2>
+                        <h4 class="card-title">Morning Sun Hotel</h4>
                         <p class="card-pricing">Night starting at <strong>128€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on side-panel-star"></i>
@@ -227,7 +232,7 @@
                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                         class="side-panel-card-image">
                     <figcaption>
-                        <h2 class="card-title">Au cœur de l'eau Bed and Breakfast</h2>
+                        <h4 class="card-title">Au cœur de l'eau Bed and Breakfast</h4>
                         <p class="card-pricing">Night starting at <strong>71€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on side-panel-star"></i>
@@ -239,11 +244,12 @@
                     </figcaption>
                 </figure>
 
+
                 <figure class="side-panel-card">
                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         class="side-panel-card-image">
                     <figcaption>
-                        <h2 class="card-title">Tout bleu et Blanc Hotel</h2>
+                        <h4 class="card-title">Tout bleu et Blanc Hotel</h4>
                         <p class="card-pricing">Night starting at <strong>68€‎</strong></p>
                         <div class="product-card-rating">
                             <i class="fa-solid fa-star star-toggled-on side-panel-star"></i>
@@ -255,11 +261,67 @@
                     </figcaption>
                 </figure>
             </div>
-
-
-
-
         </section>
+
+        <section class="activities-section">
+            <h2 class="activities-section-title">Activites in Marseille</h2>
+            <div class="activities-section-container">
+
+                <figure class="activities-section-card ">
+                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        class="section-image xl small-mobile ">
+                    <figcaption>
+                        <h3 class="card-title">Old Port</h3>
+                    </figcaption>
+
+                </figure>
+                <div>
+                    <figure class="activities-section-card ">
+                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            class="section-image lg small-mobile ">
+                        <figcaption>
+                            <h3 class="card-title">Pomègues Fort</h3>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="activities-section-card ">
+                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            class="section-image xs small-mobile ">
+                        <figcaption>
+                            <h3 class="card-title">Frioul Island</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <figure class="activities-section-card ">
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        class="section-image xl  small-mobile ">
+                    <figcaption>
+                        <h3 class="card-title"> Calanques national park</h3>
+                    </figcaption>
+                </figure>
+
+                <div>
+                    <figure class="activities-section-card ">
+                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            class="activities-section-image s small-mobile ">
+                        <figcaption>
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="activities-section-card ">
+                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            class="activities-section-image s small-mobile ">
+                        <figcaption>
+                            <h3 class="card-title">Longchamp Park</h3>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 
@@ -270,86 +332,29 @@
 
 
     <!--Activity Section-->
-    <section class="activities-section">
-        <h1 class="activities-section-title">Activites in Marseille</h1>
-        <div class="activities-section-container">
 
-            <figure class="activities-section-card ">
-                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                    class="section-image big small-mobile ">
-                <figcaption>
-                    <h2 class="card-title">Old Port</h2>
-                </figcaption>
-
-            </figure>
-            <div>
-                <figure class="activities-section-card ">
-                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                        class="section-image small small-mobile ">
-                    <figcaption>
-                        <h2 class="card-title">Pomègues Fort</h2>
-                    </figcaption>
-                </figure>
-
-                <figure class="activities-section-card ">
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                        class="section-image small small-mobile ">
-                    <figcaption>
-                        <h2 class="card-title">Frioul Island</h2>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <figure class="activities-section-card ">
-                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                    class="section-image big  small-mobile ">
-                <figcaption>
-                    <h2 class="card-title"> Calanques national park</h2>
-                </figcaption>
-            </figure>
-
-            <div>
-                <figure class="activities-section-card ">
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                        class="activities-section-image small small-mobile ">
-                    <figcaption>
-                        <h2 class="card-title">Notre-Dame-de-la-Garde</h2>
-                    </figcaption>
-                </figure>
-
-                <figure class="activities-section-card ">
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                        class="activities-section-image small  small-mobile ">
-                    <figcaption>
-                        <h2 class="card-title">Longchamp Park</h2>
-                    </figcaption>
-                </figure>
-            </div>
-
-        </div>
-    </section>
 
     <!--End of Activity Section-->
     <!--Footer-->
     <footer>
         <div class="footer-container">
             <section class="footer-section">
-                <h1 class="section-title">About</h1>
-                <p class="footer-text">Site Map</p>
-                <p class="footer-text">General Terms and Conditions</p>
-                <p class="footer-text">Data and Privacy</p>
+                <h3 class="footer-section-title">About</h3>
+                <a href="#" class="footer-text">Site Map</a> 
+                <a href="#" class="footer-text">General Terms and Conditions</a> 
+                <a href="#" class="footer-text">Data and Privacy</a>
             </section>
 
             <section class="footer-section">
-                <h1 class="section-title">Our Accommodations</h1>
-                <p class="footer-text">Quality Assessment</p>
-                <p class="footer-text">You have a hote?</p>
+                <h3 class="footer-section-title">Our Accommodations</h3>
+                <a href="#" class="footer-text">Quality Assessment</a> 
+                <a href="#" class="footer-text">You have a hotel?</a>
             </section>
 
             <section class="footer-section">
-                <h1 class="section-title">Assistance</h1>
-                <p class="footer-text">Helpdesk</p>
-                <p class="footer-text">Contact Us</p>
+                <h3 class="footer-section-title">Assistance</h3>
+                <a href="#" class="footer-text">Helpdesk</a> 
+                <a href="#" class="footer-text">Contact Us</a>
             </section>
         </div>
     </footer>
