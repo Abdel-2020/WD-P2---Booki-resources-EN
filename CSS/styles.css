@@ -632,7 +632,7 @@ footer {
     }
 
 
-   /********************************** Tooltip Section **********************/
+   /********************************** Tooltip Section ********************************/
 
     .tooltip{
         padding-left: 20px;
@@ -640,7 +640,7 @@ footer {
 
 
 
-    /********************************** Main Content section **********************/
+    /********************************** Main Content section **************************/
     .main-content {
         display: flex;
         flex-direction: column;
@@ -649,7 +649,7 @@ footer {
         padding: 0;
     }
 
-    /********************************** Results section **********************/
+    /********************************** Results section ********************************/
 
     .results-section {
         width: 95%;
