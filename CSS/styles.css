@@ -530,7 +530,7 @@ footer {
     }
 
     .form-text-field {
-        width: 70%;
+        width: 80%;
         height: 60px;
         font-size: 20px;
     }
@@ -565,7 +565,7 @@ footer {
 
     .filter-title {
         position: absolute;
-        top: 460px;
+        top: 440px;
         left: 25px
     }
 
@@ -619,7 +619,7 @@ footer {
     }
 
     .item-text {
-        font-size: 16px;
+        font-size: 20px;
         padding: 10px;
     }
 
@@ -630,6 +630,15 @@ footer {
     .order-second-place {
         order: -1;
     }
+
+
+   /********************************** Tooltip Section **********************/
+
+    .tooltip{
+        padding-left: 20px;
+    }
+
+
 
     /********************************** Main Content section **********************/
     .main-content {
