@@ -1267,8 +1267,6 @@ footer {
     /********************************** Side Panel section **********************/
   
     
-
-    
     .side-panel-icon {
         font-size: 24px;
     }
@@ -1318,71 +1316,22 @@ footer {
     
 
     
-    .activities-section-card>figcaption>.card-title {
-        padding: 10px
-    }
-    
-    .xl,
-    .lg,
-    .s,
-    .xs {
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-    
-    }
-    
     .xl {
         height: 600px;
-        width: 100%;
     }
     
     .lg {
         height: 360px;
-        width: 100%;
     }
     
     .s {
         height: 250px;
-        width: 100%;
     }
     
     .xs {
         height: 170px;
-        width: 100%;
     }
     
-    /********************************** Footer Section *************************/
-    
-    
-    footer {
-        background-color: var(--Gray);
-    }
-    
-    
-    .footer-container {
-        margin-top: 30px;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        padding: 24px;
-    }
-    
-    
-    .footer-section-title {
-        font-size: 16px;
-        margin-bottom: 16px;
-    }
-    
-    
-    .footer-text {
-        display: block;
-        padding: 5px 0;
-        font-weight: 500px;
-        cursor: pointer;
-    }
-    
-    .footer-text:hover {
-        color: var(--blue);
-    }
-    
+
+
 }
