@@ -1201,10 +1201,7 @@ footer {
     }
     
     .tooltip-icon {
-        border: var(--Gray) 2px solid;
-        border-radius: 20px;
         padding: 8px 14px;
-        color: var(--blue);
         font-size: 18px;
     }
     
