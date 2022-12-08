@@ -1219,136 +1219,70 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 10px10px;
-        margin-bottom: 30px;
+        padding: 0 20px;
+        width: 99%;
+        margin: 0 auto;
+
+
     }
     
     .results-link {
-        display: block;
-        width: 100px;
-        margin: 20px 25px 30px;
-        font-weight: 700;
-    
+      font-size: 20px;
+      width: 120px;
     }
-    
-    .results-link:hover {
-        color: var(--blue);
-    }
-    
-    .star-toggled-on {
-        color: var(--blue);
-    }
-    
-    .star-toggled-off {
-        color: var(--Gray);
-    }
-    
-    .star-toggled-on,
-    .star-toggled-off {
-        font-size: 11px;
-    }
-    
     
     /********************************** Results Section ************************/
     
-    .results-section-header {
-        padding: 20px 0 0 20px;
-    }
-    
+
     .results-section-title,
     .side-panel-title,
     .activities-section-title {
-        font-size: 18px;
-    }
-    
-    .results-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 10px;
+        font-size: 22px;
+        margin-left: 20px;
     }
     
     .product-card {
-        height: 160px;
-        width: 200px;
-        border-radius: 20px;
-        border: white 4px solid;
-        background-color: white;
-        margin: 6px 0;
-        filter: drop-shadow(0px 3px 4px #BBB);
-        transition: ease-in-out 0.2s;
+        height: 280px;
+        width: 480px;
     }
-    
-    .product-card:hover,
-    .side-panel-card:hover {
-        filter: drop-shadow(0px 0px 10px var(--blue));
-        cursor: pointer;
-    }
-    
+
     .card-image {
-        height: 55%;
+        height: 60%;
         width: 100%;
-        border-radius: 15px 15px 0 0;
-        object-fit: cover;
     }
     
     .card-title {
-        font-size: 13px;
+        font-size: 20px;
     }
     
     .card-pricing {
-        font-size: 12px;
-        padding: 2px 0;
+        font-size: 16px;
     }
-    
-    .product-card>figcaption {
-        display: flex;
-        flex-direction: column;
-        padding: 5px 5px 5px 10px;
-    }
-    
-    .product-card-rating>i {
-        letter-spacing: -3px;
+
+    .product-card-rating > i {
+        font-size: 16px;
     }
     
     
     /********************************** Side Panel section **********************/
-    .side-panel-section {
-        background-color: var(--Gray);
-        border-radius: 20px;
-        order: 0;
-    }
+  
     
-    .side-panel-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding: 10px 15px;
-    }
+
     
     .side-panel-icon {
-        font-size: 18px;
+        font-size: 24px;
     }
     
     .side-panel-card {
-        display: flex;
         height: 200px;
+        margin: 20px auto;
         width: 90%;
-        border: white 4px solid;
-        background-color: white;
-        border-radius: 15px;
-        filter: drop-shadow(0px 3px 4px #BBB);
-        margin: 13px auto;
-        transition: ease-in-out 0.2s;
     }
     
     
     .side-panel-card>figcaption {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 5px;
-        width: 150px
+        padding: 20px;
+        width: 250px;
     }
     
     .side-panel-card-image {
@@ -1375,24 +1309,14 @@ footer {
     
     }
     
-    .activities-section-container>div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-    }
+
     
     .activities-section-card {
-        width: 210px;
-        border-radius: 15px;
-        background-color: white;
-        filter: drop-shadow(0px 3px 4px #BBB);
-        transition: ease-in-out 0.3s;
+        width: 500px;
+   
     }
     
-    .activities-section-card:hover {
-        transform: translatey(-10px);
-    }
+
     
     .activities-section-card>figcaption>.card-title {
         padding: 10px
@@ -1408,22 +1332,22 @@ footer {
     }
     
     .xl {
-        height: 300px;
+        height: 600px;
         width: 100%;
     }
     
     .lg {
-        height: 160px;
+        height: 360px;
         width: 100%;
     }
     
     .s {
-        height: 100px;
+        height: 250px;
         width: 100%;
     }
     
     .xs {
-        height: 70px;
+        height: 170px;
         width: 100%;
     }
     
