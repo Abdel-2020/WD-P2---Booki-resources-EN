@@ -662,10 +662,10 @@ footer {
         padding: 0;
     }
 
-    .results-section-title {
-        font-size: 32px;
+    .results-section-title, .activities-section-title {
+        font-size: 30px;
         padding: 0;
-        text-align: center;
+        width: 95%;
         margin: 10px auto;
     }
 
@@ -691,11 +691,15 @@ footer {
         margin: 25px 0;
         width: 100%;
         border-radius: 0;
+        order:-1;
     }
 
+    .side-panel-header{
+        padding: 30px 35px 15px;
+    }
 
     .side-panel-title {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .side-panel-icon {
@@ -724,10 +728,6 @@ footer {
 
     .activities-section {
         width: 95%;
-    }
-
-    .activities-section-title {
-        font-size: 26px;
     }
 
 
@@ -807,7 +807,7 @@ footer {
     }
 
     .product-card-rating > i, .card-pricing{
-        font-size: 18px;
+        font-size: 14px;
     }
 
 
@@ -1020,9 +1020,126 @@ footer {
         width: 90%;;
     }
 
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .results-section-header {
+        padding: 20px 0 0 20px;
+    }
+
+    .results-section-title,
+    .side-panel-title,
+    .activities-section-title {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .product-card {
+        height: 190px;
+        width: 240px;
+    }
+
+    .card-image {
+        height: 60%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+
+
+    .card-title {
+        font-size: 12px;
+    }
+
+    .card-pricing {
+        font-size: 12px;
+    }
+
+   
+    .product-card-rating > i, .card-pricing{
+        font-size: 12px;
+    }
+
+
+    .product-card-rating>i {
+        letter-spacing: -3px;
+    }
 
 
 
+    .side-panel-section {
+        width: 30%;
+        background-color: var(--Gray);
+        border-radius: 20px;
+    }
+
+    .side-panel-title{
+        padding-top: 18px;
+    }
+
+
+    .side-panel-icon {
+        font-size: 18px;
+    }
+
+
+    .side-panel-card {
+        display: flex;
+        height: 140px;
+        width: 90%;
+        margin: 16px auto;
+    }
+
+    .side-panel-star{
+        font-size: 12px;
+    }
+
+    .activities-section-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px auto;
+    }
+
+
+    .activities-section-card {
+        width: 240px;
+        margin: 0;
+    }
+
+    .xl,
+    .lg,
+    .s,
+    .xs {
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+
+    }
+
+    .xl {
+        height: 300px;
+        width: 100%;
+    }
+
+    .lg {
+        height: 160px;
+        width: 100%;
+    }
+
+    .s {
+        height: 100px;
+        width: 100%;
+    }
+
+    .xs {
+        height: 70px;
+        width: 100%;
+    }
+
+    .footer-container{
+        width: 90%;;
+    }
 
 }
 
