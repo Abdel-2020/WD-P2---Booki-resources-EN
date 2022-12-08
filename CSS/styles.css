@@ -211,7 +211,7 @@ i {
     justify-content: space-between;
     align-items: baseline;
     width: 320px;
-    margin-bottom: 5x;
+    margin-bottom: 5px;
 }
 
 .tooltip-icon {
@@ -231,7 +231,6 @@ i {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 10px10px;
     margin-bottom: 30px;
 }
 
@@ -1104,90 +1103,362 @@ footer {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 2560px) {
 
-    .results-section-header {
-        padding: 20px 0 0 60px;
+
+    .site-logo {
+        position: relative;
+        height: 100px;
+        right: 35px;
+    }
+    
+    .site-logo-mobile {
+        display: none;
+    }
+    
+    .site-header,
+    .site-search-form-section {
+        margin-top: 10px;
+        margin-left: 44px;
+    }
+    
+    .site-heading {
+        font-size: 36px;
+    }
+    
+    .site-subheading {
+        font-size: 26px;
+    }
+    
+    /********************************** Navigation *****************************/
+    .site-nav {
+        width: 400px;
+        font-size: 18px;
     }
 
+    /********************************** Seacrh Form ***************************/
+    
+    .site-search-form {
+        display: flex;
+        align-items: center;
+    }
+    
+    .form-icon-background {
+        height: 55px;
+        width:60px;
+        padding: 16px;
+    }
+    
+    .form-icon {
+        font-size: 24px;
+    }
+    
+    .form-text-field {
+        height: 55px;
+        width: 300px;
+    }
+    
+    .form-button {
+        height: 55px;
+    }
+
+
+    
+    /********************************** Filter Section **************************/
+    .filter-section {
+        margin-left: 46px;
+    }
+    
+    .filter-title {
+        position: relative;
+        top: 43px;
+    }
+    
+    
+    .filters {
+        width: 40%;
+    }
+    
+    .filter-item {
+        height: 40px;
+    }
+    
+    .filter-icon-background {
+        width: 40px;
+    }
+    
+    .item-icon {
+        font-size: 20px;
+    }
+    
+    .item-text {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    
+    /********************************** Tooltip Section *************************/
+    
+    .tooltip {
+        width: 450px
+    }
+    
+    .tooltip-icon {
+        border: var(--Gray) 2px solid;
+        border-radius: 20px;
+        padding: 8px 14px;
+        color: var(--blue);
+        font-size: 18px;
+    }
+    
+    .tooltip-text {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    
+    /********************************** MainSection ***************************/
+    
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px10px;
+        margin-bottom: 30px;
+    }
+    
+    .results-link {
+        display: block;
+        width: 100px;
+        margin: 20px 25px 30px;
+        font-weight: 700;
+    
+    }
+    
+    .results-link:hover {
+        color: var(--blue);
+    }
+    
+    .star-toggled-on {
+        color: var(--blue);
+    }
+    
+    .star-toggled-off {
+        color: var(--Gray);
+    }
+    
+    .star-toggled-on,
+    .star-toggled-off {
+        font-size: 11px;
+    }
+    
+    
+    /********************************** Results Section ************************/
+    
+    .results-section-header {
+        padding: 20px 0 0 20px;
+    }
+    
     .results-section-title,
     .side-panel-title,
     .activities-section-title {
-        font-size: 24px;
+        font-size: 18px;
     }
-
+    
+    .results-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    
     .product-card {
-        height: 260px;
-        width: 460px;
+        height: 160px;
+        width: 200px;
+        border-radius: 20px;
+        border: white 4px solid;
+        background-color: white;
+        margin: 6px 0;
+        filter: drop-shadow(0px 3px 4px #BBB);
+        transition: ease-in-out 0.2s;
     }
-
+    
+    .product-card:hover,
+    .side-panel-card:hover {
+        filter: drop-shadow(0px 0px 10px var(--blue));
+        cursor: pointer;
+    }
+    
     .card-image {
-        height: 65%;
+        height: 55%;
         width: 100%;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
     }
-
+    
     .card-title {
-        font-size: 18px;
+        font-size: 13px;
     }
-
+    
     .card-pricing {
-        font-size: 16px;
+        font-size: 12px;
+        padding: 2px 0;
     }
-
+    
+    .product-card>figcaption {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 5px 5px 10px;
+    }
+    
     .product-card-rating>i {
+        letter-spacing: -3px;
+    }
+    
+    
+    /********************************** Side Panel section **********************/
+    .side-panel-section {
+        background-color: var(--Gray);
+        border-radius: 20px;
+        order: 0;
+    }
+    
+    .side-panel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 10px 15px;
+    }
+    
+    .side-panel-icon {
         font-size: 18px;
     }
-
-    .side-panel-section {
-        width: 28%;
-    }
-
+    
     .side-panel-card {
         display: flex;
-        height: 160px;
-        width: 80%;
-        margin: 32px auto;
+        height: 200px;
+        width: 90%;
+        border: white 4px solid;
+        background-color: white;
+        border-radius: 15px;
+        filter: drop-shadow(0px 3px 4px #BBB);
+        margin: 13px auto;
+        transition: ease-in-out 0.2s;
     }
-
-
+    
+    
     .side-panel-card>figcaption {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 20px;
-        width: 50%;
+        padding: 5px;
+        width: 150px
     }
-
+    
     .side-panel-card-image {
         border-radius: 15px 0 0 15px;
         width: 40%;
         object-fit: cover;
     }
-
-
-
+    
+    /********************************** Activities Section **********************/
+    .activities-section {
+        width: 100%;
+        order: 2;
+    
+    }
+    
     .activities-section-title {
-        margin: 30px 25px 10px 120px;
+        margin: 30px 25px 10px 0px;
     }
-
-
+    
+    .activities-section-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    
+    }
+    
+    .activities-section-container>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    
     .activities-section-card {
-        width: 410px;
+        width: 210px;
+        border-radius: 15px;
+        background-color: white;
+        filter: drop-shadow(0px 3px 4px #BBB);
+        transition: ease-in-out 0.3s;
     }
-
-
-    .xl {
-        height: 700px;
+    
+    .activities-section-card:hover {
+        transform: translatey(-10px);
     }
-
-    .lg {
-        height: 360px;
+    
+    .activities-section-card>figcaption>.card-title {
+        padding: 10px
     }
-
-    .s {
-        height: 300px;
-    }
-
+    
+    .xl,
+    .lg,
+    .s,
     .xs {
-        height: 270px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    
     }
-
+    
+    .xl {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .lg {
+        height: 160px;
+        width: 100%;
+    }
+    
+    .s {
+        height: 100px;
+        width: 100%;
+    }
+    
+    .xs {
+        height: 70px;
+        width: 100%;
+    }
+    
+    /********************************** Footer Section *************************/
+    
+    
+    footer {
+        background-color: var(--Gray);
+    }
+    
+    
+    .footer-container {
+        margin-top: 30px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px;
+    }
+    
+    
+    .footer-section-title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    
+    
+    .footer-text {
+        display: block;
+        padding: 5px 0;
+        font-weight: 500px;
+        cursor: pointer;
+    }
+    
+    .footer-text:hover {
+        color: var(--blue);
+    }
+    
 }
