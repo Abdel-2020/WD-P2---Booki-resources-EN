@@ -741,7 +741,7 @@ footer {
 
 
     .card-title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .product-card>.card-image {
@@ -757,9 +757,7 @@ footer {
         padding: 6px 0;
     }
 
-    .side-panel-card > figcaption >  .card-pricing{
-        margin-bottom:30px;
-    }
+
 
     .product-card-rating>i {
         font-size: 18px;
