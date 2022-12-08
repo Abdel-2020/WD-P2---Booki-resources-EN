@@ -586,12 +586,13 @@ footer {
     }
 
     .filters {
-        width: 90%;
+        width: 100%;
         margin: 30px auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 10px;
     }
 
 
