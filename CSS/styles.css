@@ -464,7 +464,7 @@ footer {
 .footer-text {
     display: block;
     padding: 5px 0;
-    font-weight: 500px;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -896,7 +896,6 @@ footer {
 
     .footer-container {
         width: 100%;
-        ;
         justify-content: space-between;
     }
 
@@ -1004,7 +1003,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        padding: 10px auto;
+        padding: 10px;
     }
 
 
