@@ -1041,7 +1041,6 @@ footer {
 
     .footer-container {
         width: 90%;
-        ;
     }
 
 }
@@ -1091,10 +1090,19 @@ footer {
 
     }
 
-
-
 }
 
+@media only screen and (min-width: 1520px) {
+    .product-card {
+        height: 220px;
+        width: 280px;
+    }
+
+    .side-panel-card {
+        height: 160px;
+    }
+
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
