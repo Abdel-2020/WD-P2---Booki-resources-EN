@@ -516,7 +516,7 @@ footer {
     /********************************** Search Section **********************/
 
 
-    .site-search-form{
+    .site-search-form {
         width: 90%;
 
     }
@@ -526,7 +526,7 @@ footer {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
-        margin:20px 0;
+        margin: 20px 0;
     }
 
     .form-icon-background {
@@ -778,7 +778,7 @@ footer {
         justify-content: space-between;
     }
 
-    .footer-section-title{
+    .footer-section-title {
         font-size: 20px;
     }
 
@@ -1108,25 +1108,25 @@ footer {
         height: 100px;
         right: 35px;
     }
-    
+
     .site-logo-mobile {
         display: none;
     }
-    
+
     .site-header,
     .site-search-form-section {
         margin-top: 10px;
         margin-left: 44px;
     }
-    
+
     .site-heading {
         font-size: 36px;
     }
-    
+
     .site-subheading {
         font-size: 26px;
     }
-    
+
     /********************************** Navigation *****************************/
     .site-nav {
         width: 400px;
@@ -1134,83 +1134,83 @@ footer {
     }
 
     /********************************** Seacrh Form ***************************/
-    
+
     .site-search-form {
         display: flex;
         align-items: center;
     }
-    
+
     .form-icon-background {
         height: 55px;
-        width:60px;
+        width: 60px;
         padding: 16px;
     }
-    
+
     .form-icon {
         font-size: 24px;
     }
-    
+
     .form-text-field {
         height: 55px;
         width: 300px;
     }
-    
+
     .form-button {
         height: 55px;
     }
 
 
-    
+
     /********************************** Filter Section **************************/
     .filter-section {
         margin-left: 46px;
     }
-    
+
     .filter-title {
         position: relative;
         top: 43px;
     }
-    
-    
+
+
     .filters {
         width: 40%;
     }
-    
+
     .filter-item {
         height: 40px;
     }
-    
+
     .filter-icon-background {
         width: 40px;
     }
-    
+
     .item-icon {
         font-size: 20px;
     }
-    
+
     .item-text {
         font-size: 20px;
         padding-left: 5px;
     }
-    
+
     /********************************** Tooltip Section *************************/
-    
+
     .tooltip {
         width: 450px
     }
-    
+
     .tooltip-icon {
         padding: 8px 14px;
         font-size: 18px;
     }
-    
+
     .tooltip-text {
         font-size: 18px;
         padding-left: 5px;
     }
-    
+
     /********************************** MainSection ***************************/
-    
+
     .main-content {
         display: flex;
         flex-wrap: wrap;
@@ -1221,14 +1221,14 @@ footer {
 
 
     }
-    
+
     .results-link {
-      font-size: 20px;
-      width: 120px;
+        font-size: 20px;
+        width: 120px;
     }
-    
+
     /********************************** Results Section ************************/
-    
+
 
     .results-section-title,
     .side-panel-title,
@@ -1236,7 +1236,7 @@ footer {
         font-size: 22px;
         margin-left: 20px;
     }
-    
+
     .product-card {
         height: 280px;
         width: 480px;
@@ -1246,88 +1246,88 @@ footer {
         height: 60%;
         width: 100%;
     }
-    
+
     .card-title {
         font-size: 20px;
     }
-    
+
     .card-pricing {
         font-size: 16px;
     }
 
-    .product-card-rating > i {
+    .product-card-rating>i {
         font-size: 16px;
     }
-    
-    
+
+
     /********************************** Side Panel section **********************/
-  
-    
+
+
     .side-panel-icon {
         font-size: 24px;
     }
-    
+
     .side-panel-card {
         height: 200px;
         margin: 20px auto;
         width: 90%;
     }
-    
-    
+
+
     .side-panel-card>figcaption {
         padding: 20px;
         width: 250px;
     }
-    
+
     .side-panel-card-image {
         border-radius: 15px 0 0 15px;
         width: 40%;
         object-fit: cover;
     }
-    
+
     /********************************** Activities Section **********************/
     .activities-section {
         width: 100%;
         order: 2;
-    
+
     }
-    
+
     .activities-section-title {
         margin: 30px 25px 10px 0px;
     }
-    
+
     .activities-section-container {
         display: flex;
         justify-content: space-between;
         padding: 10px 0;
-    
-    }
-    
 
-    
+    }
+
+
+
     .activities-section-card {
         width: 500px;
-   
-    }
-    
 
-    
+    }
+
+
+
     .xl {
         height: 600px;
     }
-    
+
     .lg {
         height: 360px;
     }
-    
+
     .s {
         height: 250px;
     }
-    
+
     .xs {
         height: 170px;
     }
-    
+
 
 
 }
