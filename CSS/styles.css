@@ -1021,22 +1021,18 @@ footer {
 
     .xl {
         height: 300px;
-        width: 100%;
     }
 
     .lg {
         height: 160px;
-        width: 100%;
     }
 
     .s {
         height: 100px;
-        width: 100%;
     }
 
     .xs {
         height: 70px;
-        width: 100%;
     }
 
     .footer-container {
@@ -1095,12 +1091,34 @@ footer {
 @media only screen and (min-width: 1520px) {
     .product-card {
         height: 220px;
-        width: 280px;
+        width: 300px;
     }
 
     .side-panel-card {
+        height: 150px;
+        margin: 26px auto;
+    }
+
+    .activities-section-card {
+        width: 300px;
+    }
+
+    .xl {
+        height: 400px;
+    }
+
+    .lg {
+        height: 230px;
+    }
+
+    .s {
         height: 160px;
     }
+
+    .xs {
+        height: 100px;
+    }
+
 
 }
 
