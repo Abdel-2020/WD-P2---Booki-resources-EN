@@ -27,13 +27,14 @@ body {
 }
 
 
-/************************************* Styling ***********************************************************/
+
 
 /********************************** Site-Header*****************************/
 
 .site-logo {
     position: relative;
     height: 60px;
+    margin: 25px 0 40px;
     right: 20px;
 }
 
@@ -44,14 +45,16 @@ body {
 .site-header,
 .site-search-form-section {
     margin-top: 10px;
-    margin-left: 24px;
+    margin-left:80px;
 }
 
 .site-heading {
-    font-size: 20px;
+    font-size: 34px;
+    margin: 10px 0;
 }
 
 .site-subheading {
+    font-size: 26px;
     font-weight: 500;
     margin-bottom: 50px;
 }
@@ -60,19 +63,19 @@ body {
 .site-nav {
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 22px;
 }
 
 
 .nav-text {
     display: block;
     border-top: white 3px solid;
-    padding: 30px 0;
+    padding-top: 50px;
     width: 200px;
     text-align: center;
     font-weight: 500;
@@ -91,40 +94,44 @@ body {
 .site-search-form {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .form-icon-background {
-    height: 45px;
-    width: 50px;
+    height: 85px;
+    width: 80px;
     display: inline-block;
     margin-right: -4px;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     background-color: var(--Gray);
-    padding: 14px;
+    padding: 26px;
 }
 
 .form-icon {
-    font-size: 18px;
+    font-size: 30px;
 
 }
 
 .form-text-field {
     border: var(--Gray) 1px solid;
     margin: 0;
-    height: 45px;
-    width: 220px;
+    height: 85px;
+    width: 18%;
     font-weight: 700;
     padding-left: 20px;
     color: black;
+    font-size: 24px;
 }
 
 .form-button {
-    border-radius: 0 15px 15px 0;
-    padding: 13px 15px;
-    background-color: var(--blue);
-    color: white;
-    font-weight: 500;
+    height: 85px;
+    width: 120px;
+    border-radius: 0 25px 25px 0;
     margin-left: -5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: var(--blue);
     cursor: pointer;
     transition: ease-in-out 0.3s;
 }
@@ -142,30 +149,32 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-left: 24px;
+    margin-left: 90px;
 
 }
 
 .filter-title {
     position: relative;
-    top: 43px;
+    top: 55px;
+    font-size: 28px;
 }
 
 
 .filters {
-    width: 60%;
-    margin: 10px 85px 30px;
+    width: 55%;
+    margin: 10px 0;
+    margin-left: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 24px;
 }
 
 
 
 .filter-item {
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,7 +185,7 @@ body {
     cursor: pointer;
     padding-right: 5px;
     transition: ease-in-out 0.5s;
-    padding: 10px 10px 10px 0;
+    padding: 20px 20px 20px 0;
 }
 
 .filter-item:hover {
@@ -188,8 +197,9 @@ body {
 .filter-icon-background {
     background-color: #DEEBFF;
     border-radius: 50px;
-    width: 40px;
-    padding: 10px;
+    width: 60px;
+    height: 60px;
+    padding: 16px;
     text-align: center;
 }
 
@@ -198,7 +208,7 @@ body {
 }
 
 .item-text {
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 /********************************** Tooltip Section *************************/
@@ -207,8 +217,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 320px;
-    margin-bottom: 5px;
+    width: 500px;
+    font-size: 20px;
+    margin:30px 0; 
 }
 
 .tooltip-icon {
@@ -227,14 +238,14 @@ body {
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    justify-content: space-evenly;
+
 }
 
 .results-link {
     display: block;
-    width: 100px;
-    margin: 20px 25px 30px;
+    font-size: 22px;
+    margin: 60px 0px 10px;
     font-weight: 700;
 
 }
@@ -259,30 +270,40 @@ body {
 
 /********************************** Results Section ************************/
 
-.results-section-header {
-    padding: 20px 0 0 20px;
+.results-section, .side-panel-section{    
+    border-radius: 20px;
+    background-color: var(--Gray);
+}
+
+.results-section{
+    width: 60%;
+    padding: 20px 50px;
+}
+
+.results-section-header{
+    padding: 40px 0px 10px;
 }
 
 .results-section-title,
 .side-panel-title,
 .activities-section-title {
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .results-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .product-card {
-    height: 160px;
-    width: 200px;
+    height: 340px;
+    width: 440px;
     border-radius: 20px;
-    border: white 4px solid;
+    border: white 8px solid;
     background-color: white;
-    margin: 6px 0;
+    margin: 14px 0;
     filter: drop-shadow(0px 3px 4px #BBB);
     transition: ease-in-out 0.2s;
 }
@@ -294,28 +315,29 @@ body {
 }
 
 .card-image {
-    height: 55%;
+    height: 60%;
     width: 100%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
 .card-title {
-    font-size: 13px;
+    font-size: 24px;
 }
 
 .card-pricing {
-    font-size: 12px;
-    padding: 2px 0;
+    font-size: 18px;
+    padding: 22px 0;
 }
 
 .product-card>figcaption {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 5px 10px;
+    padding: 10px 10px;
 }
 
 .product-card-rating>i {
+    font-size:18px;
     letter-spacing: -3px;
 }
 
@@ -325,28 +347,30 @@ body {
     background-color: var(--Gray);
     border-radius: 20px;
     order: 0;
+    width: 30%;
 }
 
 .side-panel-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 10px 15px;
+    padding: 40px 30px 10px;
 }
 
+
 .side-panel-icon {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .side-panel-card {
     display: flex;
-    height: 200px;
-    width: 90%;
-    border: white 4px solid;
+    height: 220px;
+    width: 85%;
+    border: white 8px solid;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     filter: drop-shadow(0px 3px 4px #BBB);
-    margin: 13px auto;
+    margin: 60px auto;
     transition: ease-in-out 0.2s;
 }
 
@@ -355,21 +379,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px;
-    width: 150px
+    padding: 5px 20px;
+    width: 50%;
 }
 
 .side-panel-card-image {
     border-radius: 15px 0 0 15px;
-    width: 40%;
+    width: 35%;
     object-fit: cover;
 }
 
 /********************************** Activities Section **********************/
 .activities-section {
     width: 100%;
+    padding: 80px;
     order: 2;
+}
 
+.activities-section-container{
+    margin: 0 auto;
 }
 
 .activities-section-title {
@@ -391,7 +419,7 @@ body {
 }
 
 .activities-section-card {
-    width: 210px;
+    width: 500px;
     border-radius: 15px;
     background-color: white;
     filter: drop-shadow(0px 3px 4px #BBB);
@@ -416,22 +444,22 @@ body {
 }
 
 .xl {
-    height: 300px;
+    height: 540px;
     width: 100%;
 }
 
 .lg {
-    height: 160px;
+    height: 280px;
     width: 100%;
 }
 
 .s {
-    height: 100px;
+    height: 220px;
     width: 100%;
 }
 
 .xs {
-    height: 70px;
+    height: 120px;
     width: 100%;
 }
 
@@ -448,12 +476,11 @@ footer {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 24px 80px;
 }
 
 
 .footer-section-title {
-    font-size: 16px;
     margin-bottom: 16px;
 }
 
@@ -470,12 +497,28 @@ footer {
 }
 
 
-/*******************************Media Queries****************************************/
+
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     /********************************** Header Section **********************/
+    .site-header{
+        margin: 0;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .site-heading{
+        margin-top: 0;
+        font-size: 26px;
+
+    }
+
+    .site-subheading{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
 
     .site-logo {
         display: none;
@@ -483,25 +526,26 @@ footer {
 
     .site-logo-mobile {
         display: block;
-        margin: 10px auto 140px;
+        height: 60px;
+        margin: 10px auto 100px;
     }
 
 
     /********************************** Nav Section **********************/
 
     .site-nav {
-        top: 120px;
-        justify-content: center;
+        top: 40px;
+        right: 0;
+        justify-content: space-around;
         width: 100%;
         font-size: 20px;
     }
 
-
     .nav-text {
-        width: 280px;
+        width: 100%;
+        padding-bottom: 15px;
         border-top: none;
         border-bottom: var(--Gray) 3px solid;
-        font-weight: 500;
         font-size: 16px;
         text-align: center;
     }
@@ -516,7 +560,7 @@ footer {
 
     .site-search-form {
         width: 90%;
-
+        margin-bottom: 20px;
     }
 
 
@@ -573,8 +617,9 @@ footer {
 
     .filter-title {
         position: absolute;
-        top: 430px;
-        left: 25px
+        top: 385px;
+        left: 15px;
+        font-size: 24px;
     }
 
     .filter-section {
@@ -584,7 +629,7 @@ footer {
 
     .filters {
         width: 100%;
-        margin: 30px auto;
+        margin: 10px auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -642,7 +687,9 @@ footer {
     /********************************** Tooltip Section ********************************/
 
     .tooltip {
-        padding-left: 20px;
+        font-size: 15px;
+        margin: 0 20px;
+        width: 300px;
     }
 
     /********************************** Main Content section **************************/
@@ -650,8 +697,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        padding: 0;
+       
 
     }
 
@@ -660,6 +706,8 @@ footer {
     .results-section {
         width: 95%;
         background-color: white;
+        margin:0 auto;
+        padding: 0;
     }
 
     .results-section-header {
@@ -671,19 +719,43 @@ footer {
         font-size: 24px;
         padding: 0;
         width: 95%;
-        margin: 10px auto;
+        margin: 10px 20px;
     }
 
-    .results-grid>.product-card {
-        width: 100%;
+    .results-grid{  
+        flex-direction: column;
+     
+        padding: 0px;
     }
 
     .product-card {
-        height: 280px;
+        height: 220px;
+        width: 85%;
+        margin: 15px auto;
+        border: 6px solid white;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .product-card>figcaption {
+        padding: 10px;
+    }
+
+    .card-pricing {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+
+
+
+    .product-card-rating>i {
+        font-size: 14px;
     }
 
     .results-link {
-        margin-left: 12px;
+        margin: 20px;
         font-size: 18px;
     }
 
@@ -709,63 +781,37 @@ footer {
     }
 
     .side-panel-card {
+        border: 6px solid white;
         height: 160px;
     }
 
-
-    .side-panel-card>.card-title {
-        font-size: 50px;
-    }
-
     .side-panel-card>figcaption {
-        padding: 10px 35px;
-        width: 60%;
+        width: 90%;
+        padding: 15px;
     }
 
     /********************************** Activities section **********************/
 
     .activities-section-container {
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .activities-section-card {
-        width: 90%;
-        margin: 10px auto;
+        width: 85%;
+        margin: 15px auto;
     }
 
     .activities-section {
-        width: 95%;
-    }
-
-
-    .card-title {
-        font-size: 18px;
-    }
-
-    .product-card>.card-image {
-        height: 65%;
-    }
-
-    .product-card>figcaption {
-        padding: 10px;
-    }
-
-    .card-pricing {
-        font-size: 16px;
-        padding: 6px 0;
-    }
-
-
-
-    .product-card-rating>i {
-        font-size: 14px;
+        padding: 0;
+    
     }
 
     .xs,
     .s,
     .lg,
     .xl {
-        height: 200px;
+        height: 140px;
     }
 
 
@@ -774,6 +820,7 @@ footer {
     .footer-container {
         flex-direction: column;
         justify-content: space-between;
+        padding: 40px;
     }
 
     .footer-section-title {
@@ -787,571 +834,1410 @@ footer {
 
 
 }
+    
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+@media only screen and (min-width:768px) and (max-width: 991px) {
+        /********************************** Header Section **********************/
+        .site-header{
+            margin: 0 20px;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+    
+        .site-heading{
+            margin-top: 0;
+            font-size: 28px;
+    
+        }
+    
+        .site-subheading{
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    
+        .site-logo {
+            display: none;
+        }
+    
+        .site-logo-mobile {
+            display: block;
+            height: 70px;
+            margin: 10px auto 100px;
+        }
+    
+    
+        /********************************** Nav Section **********************/
+    
+        .site-nav {
+            top: 40px;
+            right: 0;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 20px;
+        }
+    
+        .nav-text {
+            width: 100%;
+            padding-bottom: 15px;
+            border-top: none;
+            border-bottom: var(--Gray) 3px solid;
+            font-size: 20px;
+            text-align: center;
+        }
+    
+        .nav-text:hover {
+            border-top: none;
+            border-bottom: var(--blue) 3px solid;
+        }
+    
+        /********************************** Search Section **********************/
+    
+    
+        .site-search-form {
+            width: 90%;
+            margin-bottom: 20px;
+        }
+    
+    
+        .site-search-form-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            margin: 20px 0;
+        }
+    
+        .form-icon-background {
+            height: 100%;
+            width: 60px;
+            padding: 18px;
+        }
+    
+        .form-icon {
+            font-size: 24px;
+        }
+    
+        .form-text-field {
+            width: 100%;
+            height: 60px;
+            font-size: 20px;
+        }
+    
+    
+        .form-button {
+            display: none;
+        }
+    
+        .form-button-mobile {
+            display: block;
+            height: 100%;
+            width: 75px;
+            border-radius: 15px;
+            margin-left: -15px;
+            cursor: pointer;
+            background-color: var(--blue);
+            color: white;
+            transition: ease-in-out 0.3s;
+        }
+    
+        .form-button-mobile:hover {
+            background-color: darkblue;
+        }
+    
+        .form-button-icon {
+            color: white;
+            font-size: 18px;
+        }
+    
+        /********************************** Filter Section **********************/
+    
+        .filter-title {
+            position: absolute;
+            top:380px;
+            left: 35px;
+            font-size: 24px;
+        }
+    
+        .filter-section {
+            margin: 0 auto;
+    
+        }
+    
+        .filters {
+            width: 90%;
+            margin: 10px 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+    
+    
+    
+        .filter-item {
+            margin: 10px 0;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 50px;
+            padding-right: 5px;
+            border: var(--Gray) 3px solid;
+            border-left: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: ease-in-out 0.3s;
+        }
+    
 
-    }
-
-    .results-section {
-        width: 95%;
-        background-color: white;
-    }
-
-    .results-section-header {
-        padding: 0;
-    }
-
-    .results-section-title {
-        font-size: 40px;
-        padding: 0;
-        text-align: center;
-        margin: 10px auto;
-    }
-
-    .product-card {
-        height: 260px;
-        width: 45%;
-    }
-
-    .card-title {
-        font-size: 16px;
-    }
-
-    .card-image {
-        height: 70%;
-    }
-
-    .product-card-rating>i,
-    .card-pricing {
-        font-size: 14px;
-    }
-
-
-
-    .side-panel-section {
-        margin: 25px 0;
-        width: 95%;
-    }
-
-    .side-panel-title {
-        font-size: 30px;
-    }
-
-    .side-panel-icon {
-        font-size: 26px;
-    }
-
-    .card-pricing {
-        font-size: 18px;
-    }
-
-    .side-panel-star {
-        font-size: 18px;
-    }
-
-    .activities-section {
-        width: 95%;
-    }
-
-
-
-    .results-link {
-        font-size: 18px;
-    }
-
-
-    .side-panel-card>figcaption {
-        padding: 10px;
-        width: 60%;
-    }
-
-    .activities-section-container {
-        flex-direction: column;
-    }
-
-    .activities-section-title {
-        font-size: 28px;
-    }
-
-    .activities-section-card {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .xs,
-    .s,
-    .lg,
-    .xl {
-        height: 200px;
-    }
+    
+        .filter-icon-background {
+            height: 60px;
+            width: 60px;
+            padding: 18px;
+        }
+    
+    
+        .item-icon {
+            color: var(--blue);
+            font-size: 22px
+        }
+    
+        .item-text {
+            font-size: 20px;
+            padding: 10px;
+        }
+    
+        .order-first-place {
+            order: -1;
+        }
+    
+        .order-second-place {
+            order: -1;
+        }
+    
+    
+        /********************************** Tooltip Section ********************************/
+    
+        .tooltip {
+            font-size: 15px;
+            margin: 0 20px;
+            width: 40%;
+        }
+    
+        /********************************** Main Content section **************************/
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           
+    
+        }
+    
+        /********************************** Results section ********************************/
+    
+        .results-section {
+            width: 100%;
+            background-color: white;
+            margin:0 auto;
+            padding: 0;
+        }
+    
+        .results-section-header {
+            padding: 0;
+        }
+    
+        .results-section-title,
+        .activities-section-title {
+            text-align: center;
+            font-size: 24px;
+            padding: 0;
+            width: 95%;
+            margin: 10px 20px;
+        }
+    
+        .results-grid{  
+            padding: 0px;
+            flex-direction: column
+        }
+    
+        .product-card {
+            height: 300px;
+            width: 85%;
+            margin: 15px auto;
+            border: 4px solid white;
+        }
+    
+        .card-title {
+            font-size: 18px;
+        }
 
 
-    .footer-container {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-
-
+        .card-image{
+            height: 70%;
+        }
+    
+        .product-card>figcaption {
+            padding: 10px;
+        }
+    
+        .card-pricing {
+            font-size: 16px;
+            padding: 6px 0;
+        }
+    
+    
+    
+        .product-card-rating>i {
+            font-size: 14px;
+        }
+    
+        .results-link {
+            text-align: center;
+            margin: 20px;
+            font-size: 18px;
+        }
+    
+    
+        /********************************** Side Panel section **********************/
+        .side-panel-section {
+            margin: 25px 0;
+            width: 100%;
+            border-radius: 0;
+            order: -1;
+        }
+    
+        .side-panel-header {
+            padding: 30px 35px 15px;
+        }
+    
+        .side-panel-title {
+            font-size: 28px;
+        }
+    
+        .side-panel-icon {
+            font-size: 26px;
+        }
+    
+        .side-panel-card {
+            border: 4px solid white;
+            height: 160px;
+            width: 85%;
+        }
+    
+        .side-panel-card>figcaption {
+            padding: 10px;
+            width: 200px;
+        }
+    
+        /********************************** Activities section **********************/
+    
+        .activities-section-container {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    
+        .activities-section-card {
+            height: 300px;
+            width: 85%;
+            margin: 15px auto;
+        }
+    
+        .activities-section {
+            padding: 0;
+        
+        }
+    
+        .xs,
+        .s,
+        .lg,
+        .xl {
+            height: 250px;
+        }
+    
+    
+        /********************************** Footer section **********************/
+    
+        .footer-container {
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+        }
+    
+        .footer-section-title {
+            font-size: 20px;
+        }
+    
+        .footer-section {
+            margin: 20px 0;
+        }
+    
 
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-
-    .main-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
+    .site-header{
+        margin-left: 40px;
     }
-
-
-    .results-section {
-        width: 65%;
-        background-color: var(--Gray);
-        border-radius: 20px;
-        order: 0;
-    }
-
-    .results-section-header {
-        padding: 20px 0 0 20px;
-    }
-
-    .results-section-title,
-    .side-panel-title,
-    .activities-section-title {
-        text-align: left;
-        font-size: 18px;
-    }
-
-
-
-
-    .product-card {
-        height: 160px;
-        width: 190px;
-    }
-
-    .card-image {
-        height: 60%;
-        border-radius: 15px 15px 0 0;
-        object-fit: cover;
-    }
-
-
-    .card-title {
-        font-size: 12px;
-    }
-
-    .card-pricing {
-        font-size: 12px;
-    }
-
-
-    .product-card-rating>i,
-    .card-pricing {
-        font-size: 12px;
-    }
-
-
-    .product-card-rating>i {
-        letter-spacing: -3px;
-    }
-
-
-
-    .side-panel-section {
-        width: 30%;
-        background-color: var(--Gray);
-        border-radius: 20px;
-    }
-
-    .side-panel-title {
-        padding-top: 18px;
-    }
-
-
-    .side-panel-icon {
-        font-size: 18px;
-    }
-
-
-    .side-panel-card {
-        display: flex;
-        height: 110px;
-        width: 250px;
-        margin: 26px auto;
-    }
-
-    .side-panel-star {
-        font-size: 12px;
-    }
-
-    .activities-section-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        padding: 10px;
-    }
-
-
-    .activities-section-card {
-        width: 210px;
-        margin: 0;
-    }
-
-    .xl,
-    .lg,
-    .s,
-    .xs {
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-
-    }
-
-    .xl {
-        height: 300px;
-    }
-
-    .lg {
-        height: 160px;
-    }
-
-    .s {
-        height: 100px;
-    }
-
-    .xs {
-        height: 70px;
-    }
-
-    .footer-container {
-        width: 90%;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-
-
-    .product-card {
-        height: 190px;
-        width: 240px;
-    }
-
-    .card-title {
-        font-size: 14px;
-    }
-
-    .card-pricing {
-        font-size: 14px;
-        padding: 6px 0;
-    }
-
-
-    .product-card-rating>i,
-    .card-pricing {
-        font-size: 14px;
-    }
-
-
-    .side-panel-card {
-        display: flex;
-        height: 140px;
-        width: 90%;
-        margin: 19px auto;
-    }
-
-    .activities-section-card {
-        width: 240px;
-    }
-
-    .xl,
-    .lg,
-    .s,
-    .xs {
-        object-fit: cover;
-        border-radius: 15px 15px 0 0;
-
-    }
-
-}
-
-@media only screen and (min-width: 1520px) {
-    .product-card {
-        height: 220px;
-        width: 300px;
-    }
-
-    .side-panel-card {
-        height: 150px;
-        margin: 26px auto;
-    }
-
-    .activities-section-card {
-        width: 300px;
-    }
-
-    .xl {
-        height: 400px;
-    }
-
-    .lg {
-        height: 230px;
-    }
-
-    .s {
-        height: 160px;
-    }
-
-    .xs {
-        height: 100px;
-    }
-
-
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 2560px) {
-
-
     .site-logo {
-        position: relative;
-        height: 100px;
-        right: 35px;
+        height:60px;
     }
-
+    
     .site-logo-mobile {
         display: none;
     }
-
-    .site-header,
-    .site-search-form-section {
-        margin-top: 10px;
-        margin-left: 44px;
-    }
-
     .site-heading {
-        font-size: 36px;
-    }
-
-    .site-subheading {
-        font-size: 26px;
-    }
-
-    /********************************** Navigation *****************************/
-    .site-nav {
-        width: 400px;
-        font-size: 18px;
-    }
-
-    /********************************** Seacrh Form ***************************/
-
-    .site-search-form {
-        display: flex;
-        align-items: center;
-    }
-
-    .form-icon-background {
-        height: 55px;
-        width: 60px;
-        padding: 16px;
-    }
-
-    .form-icon {
         font-size: 24px;
     }
-
+    .site-subheading {
+        font-size: 20px;
+    }
+    
+    /********************************** Navigation *****************************/
+    .site-nav {
+        right: 0px;
+        font-size: 18px;
+    }
+    
+    /********************************** Seacrh Form ***************************/
+    
+    .site-search-form-section{
+        margin-left: 30px;
+    }
+    
+    .form-icon-background {
+        height: 55px;
+        width: 50px;
+        border-radius: 15px 0 0 15px;
+        padding: 16px;
+    }
+    
+    .form-icon {
+        font-size: 20px;
+    }
+    
     .form-text-field {
         height: 55px;
-        width: 300px;
+        width: 25%;
+        font-size: 20px;
     }
-
+    
     .form-button {
         height: 55px;
+        width: 90px;
+        border-radius: 0 15px 15px 0;
+        font-size: 20px;
+    
     }
-
-
-
+    
     /********************************** Filter Section **************************/
     .filter-section {
-        margin-left: 46px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 40px;
+    
     }
-
+    
     .filter-title {
         position: relative;
-        top: 43px;
+        top: 45px;
+        font-size: 20px;
     }
-
-
+    
+    
     .filters {
-        width: 40%;
+        width: 60%;
+        margin-left: 90px;
+        font-size: 12px;
     }
-
+    
     .filter-item {
         height: 40px;
+        padding: 10px 10px 10px 0;
+    }
+    
+    .item-icon{
+        font-size: 20px;
     }
 
     .filter-icon-background {
         width: 40px;
+        height: 40px;
+        padding: 10px;
     }
-
-    .item-icon {
-        font-size: 20px;
-    }
-
-    .item-text {
-        font-size: 20px;
-        padding-left: 5px;
-    }
-
+    
     /********************************** Tooltip Section *************************/
-
+    
     .tooltip {
-        width: 450px
-    }
-
-    .tooltip-icon {
-        padding: 8px 14px;
+        width: 450px;
         font-size: 18px;
     }
-
-    .tooltip-text {
-        font-size: 18px;
-        padding-left: 5px;
-    }
-
+    
+    
     /********************************** MainSection ***************************/
-
-    .main-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0 20px;
-        width: 99%;
-        margin: 0 auto;
-
-
-    }
-
+    
+    
     .results-link {
-        font-size: 20px;
-        width: 120px;
+        margin: 40px 0px 10px;
+        font-size: 18px;
     }
-
+    
+    
     /********************************** Results Section ************************/
-
-
+    
+    .results-section, .side-panel-section{    
+        border-radius: 20px;
+        background-color: var(--Gray);
+    }
+    
+    .results-section{
+        width: 60%;
+        padding: 20px;
+    }
+    
+    .results-section-header{
+        padding: 20px 0px 10px;
+    }
+    
     .results-section-title,
     .side-panel-title,
     .activities-section-title {
-        font-size: 22px;
-        margin-left: 20px;
-    }
-
-    .product-card {
-        height: 280px;
-        width: 480px;
-    }
-
-    .card-image {
-        height: 60%;
-        width: 100%;
-    }
-
-    .card-title {
         font-size: 20px;
     }
-
+    
+    .results-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    
+    .product-card {
+        height: 150px;
+        width: 180px;
+        border: white  4px solid;
+        margin: 5px 0;
+    }
+    
+    .card-image {
+        height: 55%;
+    }
+    
+    .card-title {
+        font-size: 12px;
+    }
+    
     .card-pricing {
-        font-size: 16px;
+        font-size: 12px;
+        padding: 2px 0;
     }
-
+    
+    .product-card>figcaption {
+        padding: 5px;
+    }
+    
     .product-card-rating>i {
-        font-size: 16px;
+        font-size:12px;
     }
-
-
+    
+    
     /********************************** Side Panel section **********************/
-
-
+    .side-panel-section {
+        background-color: var(--Gray);
+        border-radius: 20px;
+        order: 0;
+        width: 30%;
+    }
+    
+    .side-panel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 40px 20px 10px;
+    }
+    
     .side-panel-icon {
-        font-size: 24px;
+        font-size: 20px;
     }
-
+    
     .side-panel-card {
-        height: 200px;
-        margin: 20px auto;
-        width: 90%;
+        display: flex;
+        height: 120px;
+        width: 80%;
+        border: white 4px solid;
+        background-color: white;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 4px #BBB);
+        margin: 15px auto;
+        transition: ease-in-out 0.2s;
     }
-
-
+    
+    
     .side-panel-card>figcaption {
-        padding: 20px;
-        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        width: 150px;
     }
-
+    
     .side-panel-card-image {
         border-radius: 15px 0 0 15px;
-        width: 40%;
+        width: 35%;
         object-fit: cover;
     }
-
+    
     /********************************** Activities Section **********************/
     .activities-section {
         width: 100%;
+        padding: 40px;
         order: 2;
-
     }
+    
 
+    .activities-section-container{
+        margin: 0 auto;
+    }
+    
     .activities-section-title {
         margin: 30px 25px 10px 0px;
     }
-
+    
     .activities-section-container {
         display: flex;
         justify-content: space-between;
         padding: 10px 0;
-
     }
 
 
-
+    
+    .activities-section-container>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
     .activities-section-card {
-        width: 500px;
-
+        width: 210px;
     }
-
-
 
     .xl {
-        height: 600px;
+        height: 340px;
     }
-
+    
     .lg {
-        height: 360px;
+        height: 180px;
     }
-
+    
     .s {
-        height: 250px;
+        height: 120px;
     }
-
+    
     .xs {
-        height: 170px;
+        height: 70px;
     }
-
+    
+    /********************************** Footer Section *************************/
+    
+    
+    footer {
+        background-color: var(--Gray);
+    }
+    
+    
+    .footer-container {
+        margin-top: 30px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 80px;
+    }
+    
+    
+    .footer-section-title {
+        margin-bottom: 16px;
+    }
+    
+    
+    .footer-text {
+        display: block;
+        padding: 5px 0;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .footer-text:hover {
+        color: var(--blue);
+    }
 
 
 }
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ /*************************************  DESKTOP Styling ***********************************************************/
+/********************************** Site-Header*****************************/
+.site-header{
+    margin-left: 40px;
+}
+.site-logo {
+    height:60px;
+}
+
+.site-logo-mobile {
+    display: none;
+}
+.site-heading {
+    font-size: 24px;
+}
+.site-subheading {
+    font-size: 20px;
+}
+
+/********************************** Navigation *****************************/
+.site-nav {
+    right: 0px;
+    font-size: 18px;
+}
+
+
+
+/********************************** Seacrh Form ***************************/
+
+.site-search-form-section{
+    margin-left: 30px;
+}
+
+.form-icon-background {
+    height: 55px;
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+    padding: 16px;
+}
+
+.form-icon {
+    font-size: 20px;
+}
+
+.form-text-field {
+    height: 55px;
+    width: 25%;
+    font-size: 20px;
+}
+
+.form-button {
+    height: 55px;
+    width: 90px;
+    border-radius: 0 15px 15px 0;
+    font-size: 20px;
+
+}
+
+/********************************** Filter Section **************************/
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 40px;
+
+}
+
+.filter-title {
+    position: relative;
+    top: 45px;
+    font-size: 24px;
+}
+
+
+.filters {
+    width: 65%;
+    margin-left: 90px;
+    font-size: 18px;
+}
+
+
+
+.filter-item {
+    height: 40px;
+    padding: 20px 20px 20px 0;
+}
+
+.filter-icon-background {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+/********************************** Tooltip Section *************************/
+
+.tooltip {
+    width: 450px;
+    font-size: 18px;
+}
+
+
+/********************************** MainSection ***************************/
+
+
+.results-link {
+    display: block;
+    font-size: 18px;
+    margin: 60px 10px 10px;
+    font-weight: 700;
+
+}
+
+
+/********************************** Results Section ************************/
+
+.results-section, .side-panel-section{    
+    border-radius: 20px;
+    background-color: var(--Gray);
+}
+
+.results-section{
+    width: 60%;
+    padding: 20px;
+}
+
+.results-section-header{
+    padding: 20px 0px 10px;
+}
+
+.results-section-title,
+.side-panel-title,
+.activities-section-title {
+    font-size: 22px;
+}
+
+.results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.product-card {
+    height: 180px;
+    width:220px;
+    border-radius: 20px;
+    border: white  6px solid;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.product-card:hover,
+.side-panel-card:hover {
+    filter: drop-shadow(0px 0px 10px var(--blue));
+    cursor: pointer;
+}
+
+.card-image {
+    height: 55%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+.card-pricing {
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.product-card>figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.product-card-rating>i {
+    font-size:12px;
+    letter-spacing: -3px;
+}
+
+
+/********************************** Side Panel section **********************/
+.side-panel-section {
+    background-color: var(--Gray);
+    border-radius: 20px;
+    order: 0;
+    width: 30%;
+}
+
+.side-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 40px 20px 10px;
+}
+
+.side-panel-icon {
+    font-size: 22px;
+}
+
+.side-panel-card {
+    display: flex;
+    height: 140px;
+    width: 85%;
+    border: white 6px solid;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 4px #BBB);
+    margin: 30px auto;
+    transition: ease-in-out 0.2s;
+}
+
+
+.side-panel-card>figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 55%;
+}
+
+.side-panel-card-image {
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    object-fit: cover;
+}
+
+/********************************** Activities Section **********************/
+.activities-section {
+    width: 100%;
+    padding: 40px;
+    order: 2;
+}
+
+.activities-section-container{
+    margin: 0 auto;
+}
+
+.activities-section-title {
+    margin: 30px 25px 10px 0px;
+}
+
+.activities-section-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+.activities-section-container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.activities-section-card {
+    width: 240px;
+    border-radius: 15px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 4px #BBB);
+    transition: ease-in-out 0.3s;
+}
+
+.activities-section-card:hover {
+    transform: translatey(-10px);
+}
+
+.activities-section-card>figcaption>.card-title {
+    padding: 10px
+}
+
+.xl,
+.lg,
+.s,
+.xs {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.xl {
+    height: 440px;;
+}
+
+.lg {
+    height: 240px;
+}
+
+.s {
+    height: 180px;
+}
+
+.xs {
+    height: 120px;
+}
+
+/********************************** Footer Section *************************/
+
+
+footer {
+    background-color: var(--Gray);
+}
+
+
+.footer-container {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 80px;
+}
+
+
+.footer-section-title {
+    margin-bottom: 16px;
+}
+
+
+.footer-text {
+    display: block;
+    padding: 5px 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer-text:hover {
+    color: var(--blue);
+}
+
+}
+
+@media only screen and (min-width: 2560px) {
+    /********************************** Site-Header*****************************/
+
+.site-logo {
+    height: 80px;
+}
+
+
+
+.site-header,
+.site-search-form-section {
+    margin-top: 10px;
+    margin-left:80px;
+}
+
+.site-heading {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.site-subheading {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/********************************** Navigation *****************************/
+.site-nav {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+
+.nav-text {
+    display: block;
+    border-top: white 3px solid;
+    padding-top: 75px;
+    width: 200px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.nav-text:hover {
+    color: var(--blue);
+    border-top: var(--blue) 3px solid;
+}
+
+
+/********************************** Seacrh Form ***************************/
+.site-search-form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.form-icon-background {
+    height: 85px;
+    width: 80px;
+    display: inline-block;
+    margin-right: -4px;
+    border-radius: 20px 0 0 20px;
+    background-color: var(--Gray);
+    padding: 26px;
+}
+
+.form-icon {
+    font-size: 30px;
+
+}
+
+.form-text-field {
+    border: var(--Gray) 1px solid;
+    margin: 0;
+    height: 85px;
+    width: 18%;
+    font-weight: 700;
+    padding-left: 20px;
+    color: black;
+    font-size: 24px;
+}
+
+.form-button {
+    height: 85px;
+    width: 120px;
+    border-radius: 0 25px 25px 0;
+    margin-left: -5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.form-button:hover {
+    background-color: darkblue;
+}
+
+.form-button-mobile {
+    display: none;
+}
+
+/********************************** Filter Section **************************/
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 90px;
+
+}
+
+.filter-title {
+    position: relative;
+    top:60px;
+    font-size: 28px;
+}
+
+
+.filters {
+    width: 55%;
+    margin: 10px 0;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+
+.filter-item {
+    height: 70px;
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 50px;
+    border: var(--Gray) 3px solid;
+    border-left: none;
+    font-weight: 700;
+    cursor: pointer;
+    padding-right: 5px;
+    transition: ease-in-out 0.5s;
+    padding: 20px 20px 20px 0;
+}
+
+.filter-item:hover {
+    border-color: var(--ligther-blue);
+    background-color: var(--ligther-blue);
+}
+
+
+.filter-icon-background {
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    padding: 22px;
+    text-align: center;
+}
+
+.item-icon {
+    font-size: 26px;
+    color: var(--blue);
+}
+
+.item-text {
+    padding-left: 10px;
+}
+
+/********************************** Tooltip Section *************************/
+
+.tooltip {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 500px;
+    font-size: 20px;
+    margin:30px 0; 
+}
+
+.tooltip-icon {
+    border: var(--Gray) 2px solid;
+    border-radius: 20px;
+    padding: 4px 8px;
+    color: var(--blue);
+}
+
+.tooltip-text {
+    padding-left: 5px;
+}
+
+/********************************** MainSection ***************************/
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+
+}
+
+.results-link {
+    font-size: 22px;
+    margin: 30px 0px 10px;
+}
+
+
+
+
+/********************************** Results Section ************************/
+
+.results-section, .side-panel-section{    
+    border-radius: 20px;
+    background-color: var(--Gray);
+}
+
+.results-section{
+    width: 65%;
+    padding: 20px 50px;
+}
+
+.results-section-header{
+    padding: 40px 0px 10px;
+}
+
+.results-section-title,
+.side-panel-title,
+.activities-section-title {
+    font-size: 28px;
+}
+
+.results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.product-card {
+    height: 300px;
+    width: 460px;
+    border-radius: 25px;
+    border: white 10px solid;
+    margin: 14px 0;
+}
+
+
+
+.card-image {
+    height: 60%;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-pricing {
+    font-size: 18px;
+    padding: 12px 0;
+}
+
+.product-card>figcaption {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.product-card-rating>i {
+    font-size:18px;
+    letter-spacing: -3px;
+}
+
+
+/********************************** Side Panel section **********************/
+
+.side-panel-header {
+
+    padding: 60px 60px 10px;
+}
+
+
+.side-panel-icon {
+    font-size: 24px;
+}
+
+.side-panel-card {
+    display: flex;
+    height: 220px;
+    border: white 8px solid;
+    border-radius: 20px;
+}
+
+
+.side-panel-card>figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 20px;
+    width: 50%;
+}
+
+.side-panel-card-image {
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    object-fit: cover;
+}
+
+/********************************** Activities Section **********************/
+.activities-section {
+    width: 100%;
+    padding: 80px;
+    order: 2;
+}
+
+.activities-section-container{
+    margin: 0 auto;
+}
+
+.activities-section-title {
+    margin: 30px 25px 10px 0px;
+}
+
+.activities-section-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+.activities-section-container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.activities-section-card {
+    width: 500px;
+    border-radius: 15px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 4px #BBB);
+    transition: ease-in-out 0.3s;
+}
+
+.activities-section-card:hover {
+    transform: translatey(-10px);
+}
+
+.activities-section-card>figcaption>.card-title {
+    padding: 10px
+}
+
+.xl,
+.lg,
+.s,
+.xs {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.xl {
+    height: 540px;
+    width: 100%;
+}
+
+.lg {
+    height: 280px;
+    width: 100%;
+}
+
+.s {
+    height: 220px;
+    width: 100%;
+}
+
+.xs {
+    height: 120px;
+    width: 100%;
+}
+
+/********************************** Footer Section *************************/
+
+
+footer {
+    background-color: var(--Gray);
+}
+
+
+.footer-container {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 80px;
+}
+
+
+.footer-section-title {
+    margin-bottom: 16px;
+}
+
+
+.footer-text {
+    display: block;
+    padding: 5px 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer-text:hover {
+    color: var(--blue);
+}
+
+}
+
+
